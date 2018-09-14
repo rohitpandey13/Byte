@@ -45,13 +45,41 @@
       
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
-	<h1>Interactive Data Science Project Exploratory Analysis Byte Example</h1>
-        <p>This is the Exploratory Analysis Byte of the Interactive Data Science class.</p>
+	<h1>Movies from 1998 to 1999</h1>
+	    <p>In this project, I explored a dataset from Yahoo! research about movies. This dataset is very
+        dirty and there is a lot of missing data. The original dataset is very large (more than 10,000 rows), thus
+        I just chose a small piece of it (about 1000 rows). After some exploration, I found that the chosen piece
+        focus on the movies from 1998 to 1999 (of course there are some movies from other years), in order to better
+        displace the relationship, I just constrain the published year between 1998 to 1999. You will find more details
+        in my data-cleaning code (<a href="https://github.com/AllenChou/Byte/blob/master/byte-2/allenchou-exploration.ipynb">allenchou-exploration.ipynb</a>).
+        The full repository of this project is in my <a href="https://github.com/AllenChou/Byte/tree/master/byte-2">GitHub</a>.
+        </p>
+        <p>I visualized the monthly number of movies from 1998-01 to 1999-12. I also explored the number of movies of
+        different content rating and different genres. Meanwhile, I also showed the relationship between the content
+        rating and the genres.</p>
       </div>
-      
-  		<img alt="Spongebob" src="images/Spongebob.png">
+
       <div class="page-header">
-	
+      <center>
+	    <figure>
+  		  <img alt="year-month" src="images/year-month.png">
+  	      <figcaption>Fig.1 - The number of movies from January, 1998 to December, 1999.</figcaption>
+  		</figure>
+  	    <figure>
+  		  <img alt="content-rating" src="images/content-rating.png" width="800">
+  	      <figcaption>Fig.2 - The percent rate of movies in different content rating.</figcaption>
+  		</figure>
+  	    <figure>
+  		  <img alt="genre" src="images/genre.png" width="800">
+  	      <figcaption>Fig.3 - The number of movies in different genres. Notice that one movie may
+  	      belong to multiple genres, thus we just visualize a bar plot instead of a pie chart.</figcaption>
+  		</figure>
+  	    <figure>
+  		  <img alt="rating-genre" src="images/rating-genre.png" width="800">
+  	      <figcaption>Fig.4 - The relationship between content rating and genre. The color number is the
+  	      number of movies.</figcaption>
+  		</figure>
+  	  </center>
       </div> <!-- /page-header -->
     </div> <!-- /container -->
     

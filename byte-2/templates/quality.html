@@ -46,27 +46,35 @@
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
 	<h1>Quality: About This Data Set</h1>
-        <p>Write a brief summary about the quality of the data set here</a></p>
+        <p>The data set is very dirty. At the beginning, it even does not contain headers. I manually explored
+        the contents to identify most of the headers. Besides, most of movies only have its name, thus I chose 
+        a piece of data have most of the informations.</a></p>
       </div>
 
     
       <div class="page-header">
 	<h2>Is the data complete?</h2>
-	<p>If not, what is missing and what concerns does it raise?
-	What is your evidence for this?</p>
+	<p>No. The missing of the necessary information such as duration, production company, poster, etc. may be
+	due to the missing data of the source of the data collection (like some movie website). The missing of winners and
+	nominees may be due to the fact that this movie did not have any winners or nominees.</p>
       </div>
       
       <div class="page-header">
 	<h2>Is the data coherent?</h2>
-	<p>Does it make sense relative to itself? Does it match your
-	expectations? Are the distributions sensible? What is your
-	evidence for this?</p>
+	<p>Some attributes are coherent, such as the movie name: always name + year, and the date: always in format
+	YYYYMMDD. Meanwhile, the published dates (in readable format) match with the date attributes. If we explore the
+	rationship between genre and rating, we can find that drama, thriller, romance and action/advance focus on R or
+	NR; meanwhile Kid/Family focuses on PG or G and art/foreign focuses on NR. These relationship mathc my expectations
+	and the distribution makes sense in some degree.</p>
       </div>
 
       <div class="page-header">
 	<h2>Is the data correct?</h2>
-	<p>What aspects of this data can you verify? How did you do so? What did
-	you find?</p>
+	<p>Actually, it is not easy to verify the correctness of the data. The only thing I can verify is the published date,
+	because this information is duplicated in the data set, which is included in the name, datepublished and date. Basically,
+	the date is matched. However, the other information is not easy to verify. You need to compare them with the online
+	information to verify their correctness. Some attributes can be verified from their correlation, like the relationship
+	between genre and rating.</p>
       </div>
 
     </div> <!-- /container -->
