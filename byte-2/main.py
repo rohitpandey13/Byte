@@ -33,11 +33,13 @@ service = build('fusiontables', 'v1', developerKey=API_KEY)
 
 # This is the table id for the fusion table
 #TABLE_ID = 'NxxxNXxXxxNxXXXXNXxXXXxXxxxNxXxNxXxxXxxX'
-TABLE_ID = '1VlPiBCkYt_Vio-JT3UwM-U__APurJvPb6ZEJPg'
+#TABLE_ID = '1VlPiBCkYt_Vio-JT3UwM-U__APurJvPb6ZEJPg'
+TABLE_ID = '1Y-0-qk-c3BSp3XZpY5I1ayLwD_h_6VqEM0HaQ_Zr'
 
 # This is the default columns for the query
 query_cols = []
-query_values = ['Forlan'] #Change to be the value(s) you're querying in the column you've specified
+#query_values = ['Forlan'] #Change to be the value(s) you're querying in the column you've specified
+query_values = ['PG-13']
 
 # Import the Flask Framework
 from flask import Flask, request
@@ -73,7 +75,9 @@ def make_query(cols, values, limit):
     string_values = string_values[2:len(string_values)]
     
     #Change this query to have your corresponding column (in our soccer example, the column for our WHERE is Scorer).
-    query = "SELECT " + string_cols + " FROM " + TABLE_ID + " WHERE Scorer = '" + string_values + "'"
+#    query = "SELECT " + string_cols + " FROM " + TABLE_ID + " WHERE Scorer = '" + string_values + "'"
+
+    query = "SELECT " + string_cols + " FROM " + TABLE_ID + " WHERE cotentRating = '" + string_values + "'"
 
     query = query + " LIMIT " + str(limit)
 
